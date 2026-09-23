@@ -1,70 +1,197 @@
 <!DOCTYPE html>
+
 <html>
+
+<head>
+    <title>Aaron's Plants!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+    <link rel="icon" href="images/favicon.ico">
+    
+    
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {
+    font-family:"Karma",sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+    padding:20px
+    }
+    </style>
+
+</head>
+
+
+
 <body>
 
-<h1>Orchids</h1>
-<img src="images/OrchidStand.JPG" alt="Orchid Stand" width="500">
+<!-- Sidebar -->
 
-<h2>Pleurothallis-sp aff Bivalvis</h2>
-<img src="images/Pleurothallis-sp aff bivalvis.jpg" alt="Pleurothallis-sp aff Bivalvis" width="500">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+style="display:none;z-index:2;width:40%;min-width:300px"
+id="mySidebar">
 
-<h2>Brassavola Nodosa</h2>
-<img src="images/Brassavola Nodosa.JPG" alt="Brassavola Nodosa" width="500">
+<a href="javascript:void(0)"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+Close Menu </a>
 
-<h2>Pleurothallis Tribuloides</h2>
-<img src="images/Pleurothallis Tribuloides.jpg" alt="Pleurothallis Tribuloides" width="500">
+<a href="#orchids"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+Orchids </a>
+
+<a href="#ferns"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+Ferns </a>
+
+<a href="#Other_plants"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+Other Plants </a>
+
+</nav>
+
+<!-- Top Menu -->
+
+<div class="w3-top">
+
+  <div class="w3-flex w3-white w3-xlarge"
+  style="max-width:1200px;margin:auto;align-items:center">
+
+<button class="w3-button w3-padding-16"
+onclick="w3_open()">
+☰
+</button>
+
+<div class="w3-padding-16 w3-center" style="flex:1">
+Orchids!
+</div>
 
 
-<h2>Ornithocephalus Inflexus</h2> 
-<img src="images/Ornithocephalus Inflexus.jpg" alt="Ornithocephalus Inflexus" width="500">
+  </div>
+
+</div>
+
+<!-- Page Content -->
+
+<main class="w3-content w3-padding"
+style="max-width:1200px;margin-top:100px">
 
 
-<h2>Dendrobium Parvulum Blue</h2> 
-<img src="images/Dendrobium Parvulum Blue.jpg" alt="Dendrobium Parvulum Blue" width="500">
+<div id="plant"
+    class="w3-grid w3-center w3-padding-16"
+    style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+
+  <article>
+    <img src="images/Pleurothallis-sp aff bivalvis.jpg" 
+        alt="Pleurothallis-sp aff Bivalvis"
+        style="width:100%">
 
 
-<h2>Dendrobium Torssae</h2>
-<img src="images/Dendrobium Torssae.jpg" alt="Dendrobium Torssae" width="500">
+    <h3>Pleurothallis-sp aff Bivalvis</h3>
+
+    <p>
+        <a href="https://orchids.fandom.com/wiki/Pleurothallis_bivalvis">Wiki link for similar flowers</a>
+    </p>
+  </article>
 
 
-<h2>Dendrobium Leucocyanum</h2>
-<img src="images/Dendrobium Leucocyanum.jpg" alt="Dendrobium Leucocyanum" width="500">
+  <article>
+    <img src="images/Brassavola Nodosa.JPG" alt="Brassavola Nodosa"
+        style="width:100%">
 
 
-<h2>Dendrobium Willette Klausner Super Nova Blast</h2>
+    <h3>Brassavola Nodosa</h3>
+
+    <p>
+        <a href="https://hort.extension.wisc.edu/articles/lady-of-the-night-orchid-brassavola-nodosa/">Link to a page about them</a>
+    </p>
+  </article>
 
 
-<h2>Lc. Fire Gem 'Hot Splash'</h2>
-<a>https://www.sunsetvalleyorchids.com/htm/photo_detail.php?prod=4231</a>
+    <article>
+    <img src="images/Pleurothallis Tribuloides.jpg" alt="Pleurothallis Tribuloides"
+        style="width:100%">
 
-<h2>Dendrobium Thyrsiflorum</h2>
 
-<h2>Cattleya Intermedia var Aquinii Coerulea var Gabriel Ammaru</h2>
+    <h3>Pleurothallis Tribuloides</h3>
 
-<h2>Dendrobium Bullenianum</h2>
+    <p>
+        <a href="https://travaldo.blogspot.com/2018/02/pleurothallis-tribuloides-care-and-culture.html">Link to a blog about them</a>
+    </p>
+  </article>
 
-<h2>Unkown Trader Joes Orchid</h2>
 
-<h1>Ferns</h1>
-<h2>Tasty Sword Fern</h2>
-<img src="images/figgy_baby_1.JPG" alt="Figgy Baby 1" width="500">
-<img src="images/figgy_baby_2.JPG" alt="Figgy Baby 2" width="500">
+    <article>
+    <img src="images/Ornithocephalus Inflexus.jpg" alt="Ornithocephalus Inflexus"
+        style="width:100%">
 
-<h2>Staghorn Fern - Birfurcatum Var - Netherland Staghorn</h2>
 
-<h2>Silver Staghorn Fern - Platycerium Veitchii - Australia</h2>
+    <h3>Ornithocephalus Inflexus</h3>
 
-<h2>Phlebodium Aureum</h2>
+    <p>
+        <a href="https://www.orchidspecies.com/ornithocinflexus.htm">Link to a wiki about them</a>
+    </p>
+  </article>
 
-<h1>African Violets</h1>
-<img src="images/african_violet_1.JPG" alt="African Violets" width="500">
-<img src="images/african_violet_2.JPG" alt="African Violets" width="500">
-<img src="images/african_violet_3.JPG" alt="African Violets" width="500">
-<img src="images/african_violet_4.JPG" alt="African Violets" width="500">
+    <article>
+    <img src="images/Dendrobium Parvulum Blue.jpg" alt="Dendrobium Parvulum Blue"
+        style="width:100%">
 
-<h1>Other Plants</h1>
 
-<h2>Maranta Leuconerura (Prayer Plant)</h2>
+    <h3>Dendrobium Parvulum Blue</h3>
+
+    <p>
+        <a href="https://travaldo.blogspot.com/2018/01/dendrobium-parvulum-care-and-culture.html">Link to a blog about them</a>
+    </p>
+  </article>
+
+    <article>
+    <img src="images/Dendrobium Torssae.jpg" alt="Dendrobium Torssae"
+        style="width:100%">
+
+
+    <h3>Dendrobium Torssae</h3>
+
+    <p>
+        <a href="https://www.orchidspecies.com/dentorresae.htm">Link to a wiki about them</a>
+    </p>
+  </article>
+
+    <article>
+    <img src="images/Dendrobium Leucocyanum.jpg" alt="Dendrobium Leucocyanum"
+        style="width:100%">
+
+
+    <h3>Dendrobium Leucocyanum</h3>
+
+    <p>
+        <a href="https://www.orchidspecies.com/denleucocyanum.htm">Link to a wiki about them</a>
+    </p>
+  </article>
+
+
+</div>
+
+
+
+
+
+</main>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
